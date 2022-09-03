@@ -30,7 +30,7 @@ function win(){
 
 function computerPlay(play){
     var pick = ["rock", "paper", "scissors"]
-    play = pick[Math.round(Math.random()*(pick.length-1))]
+    play = pick[Math.round(Math.random()*(pick.length))]
     return play
 }
 

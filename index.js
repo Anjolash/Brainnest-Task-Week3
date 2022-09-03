@@ -39,7 +39,7 @@ function playRound(playerSelection, computerSelection ){
     if(playerSelection === computerSelection ){
         return "Draw"
     }
-    if(playerSelection == "rock" && computerSelection === "scissors" ){
+    else if(playerSelection == "rock" && computerSelection === "scissors" ){
         playerScore ++ ;
         return "You win! Rock beats scissors"    
     }

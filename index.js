@@ -8,7 +8,7 @@ const loseGifVisibility = document.querySelector(".losegif");
 const tieGifVisibility = document.querySelector(".tiegif");
 winGifVisibility.classList += " notVisible";
 loseGifVisibility.classList += " notVisible";
-tieGifVisibility.classList += " notVisible";
+tieGifVisibility.classList += " notVisible"; 
 
 function win(){
     userScore__span.innerHTML = playerScore;

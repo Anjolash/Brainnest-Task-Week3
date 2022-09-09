@@ -12,7 +12,7 @@ const scissorsBtn = document.querySelector(".scissors");
 const buttons = document.querySelectorAll(".playerOptions button")
 winGifVisibility.classList += " notVisible";
 loseGifVisibility.classList += " notVisible";
-tieGifVisibility.classList += " notVisible";
+tieGifVisibility.classList += " notVisible"; 
 
 function win(){
     userScore__span.innerHTML = playerScore;
@@ -40,7 +40,11 @@ function win(){
 
 function computerPlay(play){
     var pick = ["rock", "paper", "scissors"]
+<<<<<<< HEAD
     play = pick[Math.round(Math.random()*(pick.length -1))]
+=======
+    play = pick[Math.round(Math.random()*(pick.length))]
+>>>>>>> e4f9ed24c5ad585cc159fe385f96f5ef353531cd
     return play
 }
 
@@ -49,11 +53,15 @@ function playRound(playerSelection, computerSelection ){
     if(playerSelection === computerSelection ){
         return "Draw"
     }
+<<<<<<< HEAD
     else if(
         playerSelection == "rock" && computerSelection === "scissors"  || 
         playerSelection == "paper" && computerSelection === "rock" ||
         playerSelection == "scissors" && computerSelection === "paper" 
     ){
+=======
+    else if(playerSelection == "rock" && computerSelection === "scissors" ){
+>>>>>>> e4f9ed24c5ad585cc159fe385f96f5ef353531cd
         playerScore ++ ;
         return "You win! " + `${playerSelection}` +  " beats " + `${computerSelection}`
     }

@@ -62,7 +62,7 @@ function playRound(playerSelection, computerSelection ){
     else if(playerSelection == "scissors" && computerSelection === "paper" ){
         playerScore ++
         return "You Win! scissors beats paper"
-    }
+    } 
 }
 
 function game(){
